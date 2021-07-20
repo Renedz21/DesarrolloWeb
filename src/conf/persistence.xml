@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SupermercadoFinalPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Negocio.Articulo</class>
+    <class>Negocio.Cliente</class>
+    <class>Negocio.DetallePedido</class>
+    <class>Negocio.OrdenCompra</class>
+    <class>Negocio.DetalleCompra</class>
+    <class>Negocio.Proveedor</class>
+    <class>Negocio.Empleado</class>
+    <class>Negocio.NotaPedido</class>
+    <class>Negocio.Kardex</class>
+    <class>Negocio.Venta</class>
+    <class>Negocio.Compra</class>
+    <class>Negocio.Detalleventa</class>
+    <class>Negocio.Detallecompra</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Supermercado_Perez_Castillo"/>
+      <property name="javax.persistence.jdbc.user" value="edperez"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>

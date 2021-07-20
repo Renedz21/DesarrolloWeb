@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="FormBorrarProveedor" type="Vista.FormBorrarProveedor"/>
+        <form-bean name="FormBorrarCliente" type="Vista.FormBorrarCliente"/>
+        <form-bean name="FormularioProveedor" type="Vista.FormularioProveedor"/>
+        <form-bean name="FormularioCliente" type="Vista.FormularioCliente"/>
+        <form-bean name="DatoListarProveedor" type="Vista.DatoListarProveedor"/>
+        <form-bean name="DatoListarEmpleado" type="Vista.DatoListarEmpleado"/>
+        <form-bean name="DatoIngresarProveedor" type="Vista.DatoIngresarProveedor"/>
+        <form-bean name="DatoIngresarEmpleado" type="Vista.DatoIngresarEmpleado"/>
+        <form-bean name="DatoEliminarProveedor" type="Vista.DatoEliminarProveedor"/>
+        <form-bean name="DatoEliminarEmpleado" type="Vista.DatoEliminarEmpleado"/>
+        <form-bean name="DatoBuscarProveedor" type="Vista.DatoBuscarProveedor"/>
+        <form-bean name="DatoBuscarEmpleado" type="Vista.DatoBuscarEmpleado"/>
+        <form-bean name="DatoActualizarProveedor" type="Vista.DatoActualizarProveedor"/>
+        <form-bean name="DatoActualizarEmpleado" type="Vista.DatoActualizarEmpleado"/>
+        <form-bean name="DatoBuscarCliente" type="Vista.DatoBuscarCliente"/>
+        <form-bean name="DatoEliminarCliente" type="Vista.DatoEliminarCliente"/>
+        <form-bean name="DatoListarCliente" type="Vista.DatoListarCliente"/>
+        <form-bean name="DatoActualizarCliente" type="Vista.DatoActualizarCliente"/>
+        <form-bean name="DatoIngresarCliente" type="Vista.DatoIngresarCliente"/>
+        <form-bean name="AccesoProcesoVenta" type="Vista.AccesoProcesoVenta"/>
+        <form-bean name="FormularioAcceso" type="Vista.FormularioAcceso"/>
+        <form-bean name="FormularioEmpleado" type="Vista.FormularioEmpleado"/>
+    
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="welcome"  path="/Welcome.do"/>
+    </global-forwards>
+
+    <action-mappings>
+        <action input="/Registro.jsp" name="FormularioEmpleado" path="/EmpleadoControl" scope="request" type="Controladores.EmpleadoControl">
+            <forward name="mensaje" path="/Mensaje.jsp"/>
+        </action>
+        <action input="/Acceso.jsp" name="FormularioAcceso" path="/AccesoControl" scope="request" type="Controladores.AccesoControl">
+            <forward name="menu" path="/Menu.jsp"/>
+            <forward name="mensaje" path="/MensajeError.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="AccesoProcesoVenta" path="/VentaControl" scope="request" type="Controladores.VentaControl">
+            <forward name="ver" path="/Ventas.jsp"/>
+            <forward name="listado" path="/ListarArticulo.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoIngresarCliente" path="/IngresarRegistroCliente" scope="request" type="Controladores.IngresarRegistroCliente">
+            <forward name="ir" path="/AgregarCliente.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoEliminarCliente" path="/IngresarBorrarCliente" scope="request" type="Controladores.IngresarBorrarCliente">
+            <forward name="ir" path="/EliminarCliente.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoBuscarCliente" path="/IngresarBuscarCliente" scope="request" type="Controladores.IngresarBuscarCliente">
+            <forward name="ir" path="/BuscarCliente.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoActualizarCliente" path="/IngresarActualizarCliente" scope="request" type="Controladores.IngresarActualizarCliente">
+            <forward name="ir" path="/ActualizarCliente.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoListarCliente" path="/IngresarListarCliente" scope="request" type="Controladores.IngresarListarCliente">
+            <forward name="ir" path="/ListarClientes.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoIngresarProveedor" path="/IngresarRegistroProveedor" scope="request" type="Controladores.IngresarRegistroProveedor">
+            <forward name="ir" path="/AgregarProveedor.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoIngresarEmpleado" path="/IngresarRegistroEmpleado" scope="request" type="Controladores.IngresarRegistroEmpleado">
+            <forward name="ir" path="/AgregarEmpleado.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoListarProveedor" path="/IngresarListarProveedor" scope="request" type="Controladores.IngresarListarProveedor">
+            <forward name="ir" path="/ListarProveedor.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoListarEmpleado" path="/IngresarListarEmpleado" scope="request" type="Controladores.IngresarListarEmpleado">
+            <forward name="ir" path="/ListarEmpleado.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoBuscarProveedor" path="/IngresarBuscarProveedor" scope="request" type="Controladores.IngresarBuscarProveedor">
+            <forward name="ir" path="/BuscarProveedor.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoBuscarEmpleado" path="/IngresarBuscarEmpleado" scope="request" type="Controladores.IngresarBuscarEmpleado">
+            <forward name="ir" path="/BuscarEmpleado.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoEliminarProveedor" path="/IngresarBorrarProveedor" scope="request" type="Controladores.IngresarBorrarProveedor">
+            <forward name="ir" path="/EliminarProveedor.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoEliminarEmpleado" path="/IngresarBorrarEmpleado" scope="request" type="Controladores.IngresarBorrarEmpleado">
+            <forward name="ir" path="/EliminarEmpleado.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoActualizarProveedor" path="/IngresarActualizarProveedor" scope="request" type="Controladores.IngresarActualizarProveedor">
+            <forward name="ir" path="/ActualizarProveedor.jsp"/>
+        </action>
+        <action input="/Menu.jsp" name="DatoActualizarEmpleado" path="/IngresarActualizarEmpleado" scope="request" type="Controladores.IngresarActualizarEmpleado">
+            <forward name="ir" path="/ActualizarEmpleado.jsp"/>
+        </action>
+        <action input="/AgregarProveedor.jsp" name="FormularioProveedor" path="/ControladorParaProveedor" scope="request" type="Controladores.ControladorParaProveedor">
+            <forward name="registrar" path="/MensajeGeneral.jsp"/>
+        </action>
+        <action input="/AgregarCliente.jsp" name="FormularioCliente" path="/ControladorParaCliente" scope="request" type="Controladores.ControladorParaCliente">
+            <forward name="registrar" path="/MensajeGeneral.jsp"/>
+        </action>
+        <action input="/ActualizarCliente.jsp" name="FormularioCliente" path="/ControladorActualizarCliente" scope="request" type="Controladores.ControladorActualizarCliente">
+            <forward name="update" path="/MensajeGeneral.jsp"/>
+        </action>
+        <action input="/ActualizarProveedor.jsp" name="FormularioProveedor" path="/ControladorActualizarProveedor" scope="session" type="Controladores.ControladorActualizarProveedor">
+            <forward name="update" path="/MensajeGeneral.jsp"/>
+        </action>
+        <action input="/EliminarCliente.jsp" name="FormBorrarCliente" path="/ControladorBorrarCliente" scope="request" type="Controladores.ControladorBorrarCliente">
+            <forward name="delete" path="/MensajeGeneral.jsp"/>
+        </action>
+        <action input="/EliminarProveedor.jsp" name="FormBorrarProveedor" path="/ControladorBorrarProveedor" scope="request" type="Controladores.ControladorBorrarProveedor">
+            <forward name="delete" path="/MensajeGeneral.jsp"/>
+        </action>
+              
+        
+        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+    </action-mappings>
+    
+    <controller processorClass="org.springframework.web.struts.DelegatingTilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

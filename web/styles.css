@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("imgs/granos.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.cabecera {
+    background: url("imgs/taza.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 520px;
+    margin-bottom: 50px;
+}
+
+.navegacion {
+    background-color: transparent;
+}
+
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Yomogi', cursive;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px 25px 0px 5px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    transition: all ease .5s;
+}
+
+.nav-link {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Yomogi', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    text-align: center;
+    margin: 0px 25px;
+}
+
+.text {
+    margin-top: 90px;
+}
+
+.titulo-general {
+    color: white;
+    text-align: center;
+    font-family: 'Yomogi', cursive;
+    font-size: 57px;
+    font-weight: bold;
+}
+
+.abajo {
+    font-family: 'Zilla Slab', serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-title {
+    color: rgb(136, 14, 14);
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(100, 98, 98);
+}
+
+.carousel {
+    max-width: 70%;
+    align-items: center;
+    background-color: wheat;
+    margin: 0px 15%;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+#boton, .alerta{
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.alerta{
+    margin: auto;
+    margin-left: 40%;
+}
+
+.mensaje{
+    font-weight: 500;
+    text-align: center;
+}
+
+.fas{
+   margin-left: 2%;
+}
+#boton:hover{
+    background-color:#34D99E;
+    color: black;
+}
+
+.alerta:hover{
+    background-color: #FAF563;
+    color:green;
+}
+
+
+.bad {
+    width: 100%;
+}
+
+.todo {
+    padding: 55px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.primera {
+    margin: auto;
+}
+
+.card {
+    overflow: hidden;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+.bad:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out .6s;
+}
+
+.formulario {
+    width: 45%;
+    margin: auto;
+    padding: 15px;
+    font-size: 30px;
+    background-color: rgb(170, 170, 152);
+    font-family: 'Indie Flower', cursive;
+}
+
+.form-control {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.comprar {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(255, 0, 0);
+}
+
+.comprar:hover {
+    color: rgb(255, 255, 255);
+}
+
+.product:hover {
+    background-color: rgb(189, 89, 89);
+}
+
+.accordion-button {
+    background-color: rgb(136, 235, 116);
+    color: rgb(25, 0, 255);
+}
+
+.mivi {
+    margin: 5%;
+}
+
+.texto-mivi {
+    background-color: rgb(211, 145, 145);
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Sofadi One', cursive;
+}
+
+.accordion-item {
+    font-size: 20px;
+}
+
+.imagenes {
+    display: block;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+}
+
+.logito {
+
+    margin: auto;
+    margin-bottom: 2.5%;
+    margin-left: 22%;
+    align-items: center;
+    max-width: 450px;
+}
+
+.logito:hover,
+.producto:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in 0.4s;
+}
+
+.add{
+    width: 100%
+}
+
+.re{
+    margin: auto;
+    border-radius: 8px;
+    width: 65%;
+    padding: 35px;
+    background-color: rgb(170, 170, 152);
+}
+
+#acc{
+    font-size: 27px;
+    font-family: 'Indie Flower', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url("imgs/granos.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .cabecera {
+        background: url("imgs/taza.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 520px;
+        margin-bottom: 50px;
+    }
+
+    .navegacion {
+        background-color: transparent;
+    }
+
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Yomogi', cursive;
+        overflow: hidden;
+        padding: 0;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        transition: all ease .5s;
+    }
+
+    .nav-link {
+        font-size: 23px;
+        font-weight: 900;
+        font-family: 'Yomogi', cursive;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .card-title {
+        color: rgb(136, 14, 14);
+    }
+
+    .card-text {
+        font-size: 18px;
+        font-weight: 100;
+        color: rgb(100, 98, 98);
+    }
+
+    .nav-item {
+        text-align: center;
+        margin: 0px 25px;
+    }
+
+    .text {
+        margin-top: 80px;
+    }
+
+    .titulo-general {
+        color: white;
+        text-align: center;
+        font-family: 'Yomogi', cursive;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .abajo {
+        font-family: 'Zilla Slab', serif;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .carousel {
+        max-width: 70%;
+        align-items: center;
+        background-color: wheat;
+        margin: 0px 15%;
+        padding: 25px;
+        border-radius: 4px;
+    }
+
+    .todo {
+        padding: 55px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+
+    .card {
+        overflow: hidden;
+    }
+
+    .bad:hover {
+        transform: scale(1.1);
+        transition: all ease-in-out .6s;
+    }
+
+    .formulario {
+        width: 80%;
+        margin: auto;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .comprar {
+        text-decoration: none;
+        font-size: 18px;
+        color: rgb(243, 11, 11);
+    }
+
+    .accordion-button {
+        background-color: rgb(136, 235, 116);
+        color: rgb(25, 0, 255);
+    }
+
+    .mivi {
+        margin: 5%;
+    }
+
+    .texto-mivi {
+        background-color: rgb(211, 145, 145);
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Sofadi One', cursive;
+    }
+
+    .accordion-item {
+        font-size: 20px;
+    }
+
+    .imagenes {
+        display: block;
+        margin: auto;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logito {
+
+        margin: auto;
+        margin-bottom: 2.5%;
+        margin-left: 7%;
+        align-items: center;
+        width: 100%;
+    }
+
+}
